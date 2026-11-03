@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Révisions Terminale ES - L'Énergie : Ressources et Consommation</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- KaTeX for math rendering -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js"
+        onload="renderMathInElement(document.body);"></script>
+    <style>
+        body {
+            font-family: 'Inter', system-ui, -apple-system, sans-serif;
+        }
+    </style>
+</head>
+
+<body class="bg-slate-50 text-slate-800 min-h-screen flex flex-col">
+
+    <!-- Header / Navbar -->
+    <header class="bg-gradient-to-r from-blue-700 via-indigo-700 to-slate-900 text-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 py-4 flex flex-col md:flex-row justify-between items-center gap-4">
+            <div class="flex items-center space-x-3">
+                <i class="fa-solid font-bold text-yellow-300 text-2xl fa-bolt"></i>
+                <div>
+                    <h1 class="text-xl md:text-2xl font-bold">L'Énergie : Ressources et Consommation</h1>
+                    <p class="text-xs text-blue-200">Terminale - Enseignement Scientifique | Page Unique Intégrale</p>
+                </div>
+            </div>
+            <nav class="flex flex-wrap justify-center gap-2 text-xs">
+                <a href="#section-cours" class="px-3 py-1.5 bg-white/10 rounded-lg text-white hover:bg-white/20 transition">
+                    <i class="fa-solid fa-book-open mr-1"></i> Cours
+                </a>
+                <a href="#section-calculatrice" class="px-3 py-1.5 bg-white/10 rounded-lg text-white hover:bg-white/20 transition">
+                    <i class="fa-solid fa-calculator mr-1"></i> Calculatrice
+                </a>
+                <a href="#section-qcm" class="px-3 py-1.5 bg-white/10 rounded-lg text-white hover:bg-white/20 transition">
+                    <i class="fa-solid fa-list-check mr-1"></i> QCM (15Q)
+                </a>
+                <a href="#section-docs" class="px-3 py-1.5 bg-white/10 rounded-lg text-white hover:bg-white/20 transition">
+                    <i class="fa-solid fa-file-pen mr-1"></i> Études de Docs (10Q)
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content Container -->
+    <main class="max-w-7xl mx-auto px-4 py-8 flex-grow w-full space-y-16">
+
+        <!-- ================= SECTION 1 : COURS ET FORMULES ================= -->
+        <section id="section-cours" class="space-y-8 scroll-mt-24">
+            <div class="bg-blue-50 border-l-4 border-blue-600 p-4 rounded-r-xl shadow-sm">
+                <h2 class="text-xl font-bold text-blue-900 flex items-center">
+                    <i class="fa-solid fa-circle-info mr-2"></i> 1. L'essentiel du chapitre pour le contrôle
+                </h2>
+                <p class="text-sm text-blue-800 mt-1">
+                    Ce chapitre évalue ta capacité à distinguer les formes d'énergie, convertir les unités et manipuler
+                    la formule E = P × Δt dans des études de cas concrètes.
+                </p>
+            </div>
+
+            <!-- Grid de cartes de cours -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+                <!-- Carte 1 -->
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200 hover:shadow-md transition">
+                    <div class="w-10 h-10 bg-amber-100 text-amber-600 rounded-xl flex items-center justify-center font-bold mb-4">
+                        <i class="fa-solid fa-bolt text-xl"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-slate-900 mb-2">1. La Formule Clé : E = P × Δt</h3>
+                    <ul class="text-sm space-y-2 text-slate-600">
+                        <li><strong>E (Énergie) :</strong> exprimée en Joules (J) ou Wattheures (Wh).</li>
+                        <li><strong>P (Puissance) :</strong> exprimée en Watts (W).</li>
+                        <li><strong>Δt (Durée) :</strong> en secondes (s) pour avoir des Joules, ou en heures (h) pour des Wh.</li>
+                        <li class="bg-slate-100 p-2 rounded text-xs font-mono text-slate-800 mt-2">
+                            1 W = 1 J/s | 1 kW = 1 000 W | 1 MW = 1 000 000 W
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Carte 2 -->
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200 hover:shadow-md transition">
+                    <div class="w-10 h-10 bg-indigo-100 text-indigo-600 rounded-xl flex items-center justify-center font-bold mb-4">
+                        <i class="fa-solid fa-calculator text-xl"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-slate-900 mb-2">2. Démonstration : 1 kWh = 3,6 × 10⁶ J</h3>
+                    <p class="text-sm text-slate-600 mb-2">Question de contrôle classique :</p>
+                    <ol class="text-xs space-y-1 text-slate-700 font-mono bg-slate-50 p-3 rounded-lg border border-slate-100">
+                        <li>1) 1 kWh = 1 kW × 1 h</li>
+                        <li>2) 1 kW = 1 000 W</li>
+                        <li>3) 1 h = 3 600 s</li>
+                        <li>4) E = 1 000 × 3 600 = 3 600 000 Joules</li>
+                        <li>5) E = 3,6 × 10⁶ J = 3,6 MJ</li>
+                    </ol>
+                </div>
+
+                <!-- Carte 3 -->
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200 hover:shadow-md transition">
+                    <div class="w-10 h-10 bg-emerald-100 text-emerald-600 rounded-xl flex items-center justify-center font-bold mb-4">
+                        <i class="fa-solid fa-leaf text-xl"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-slate-900 mb-2">3. Ressources : Stock vs Flux</h3>
+                    <ul class="text-sm space-y-2 text-slate-600">
+                        <li><strong>Ressources en STOCK (Non renouvelables) :</strong> Gisements limités se régénérant extrêmement lentement. <br><em class="text-xs text-slate-500">Exemples : Pétrole, Charbon, Gaz naturel, Uranium.</em></li>
+                        <li><strong>Ressources en FLUX (Renouvelables) :</strong> Inépuisables à l'échelle humaine. <br><em class="text-xs text-slate-500">Exemples : Solaire, Éolien, Hydraulique, Géothermie, Biomasse.</em></li>
+                    </ul>
+                </div>
+
+                <!-- Carte 4 -->
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200 hover:shadow-md transition">
+                    <div class="w-10 h-10 bg-rose-100 text-rose-600 rounded-xl flex items-center justify-center font-bold mb-4">
+                        <i class="fa-solid fa-plug text-xl"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-slate-900 mb-2">4. Énergie Primaire vs Finale</h3>
+                    <ul class="text-sm space-y-2 text-slate-600">
+                        <li><strong>Énergie Primaire :</strong> Disponible dans la nature avant toute transformation (vent, pétrole brut, uranium).</li>
+                        <li><strong>Énergie Finale :</strong> Livrée prête à l'emploi au consommateur (électricité au compteur, essence au réservoir).</li>
+                        <li class="text-xs bg-rose-50 text-rose-800 p-2 rounded">
+                            <strong>Pertes importantes :</strong> Pour l'électricité, 2/3 de l'énergie primaire sont perdus (chaleur) lors des transformations et du transport !
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Carte 5 -->
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200 hover:shadow-md transition">
+                    <div class="w-10 h-10 bg-cyan-100 text-cyan-600 rounded-xl flex items-center justify-center font-bold mb-4">
+                        <i class="fa-solid fa-chart-pie text-xl"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-slate-900 mb-2">5. Diagramme en Camembert (Méthode)</h3>
+                    <p class="text-sm text-slate-600 mb-2">Pour construire un camembert à partir de valeurs :</p>
+                    <ol class="text-xs space-y-1 text-slate-700">
+                        <li>1. Calculer le total des consommations.</li>
+                        <li>2. Pourcentage d'une part = (Valeur de la part / Total) × 100</li>
+                        <li>3. Angle au rapporteur (en °) = Pourcentage × 3,6</li>
+                    </ol>
+                </div>
+
+                <!-- Carte 6 -->
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200 hover:shadow-md transition">
+                    <div class="w-10 h-10 bg-purple-100 text-purple-600 rounded-xl flex items-center justify-center font-bold mb-4">
+                        <i class="fa-solid fa-car text-xl"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-slate-900 mb-2">6. Calcul d'Autonomie (Règle de 3)</h3>
+                    <p class="text-sm text-slate-600 mb-2">Si une voiture consomme C en MJ pour 100 km avec une énergie disponible E (totale) :</p>
+                    <div class="bg-purple-50 p-3 rounded-lg text-xs font-mono text-purple-900 border border-purple-100">
+                        Distance (km) = (Énergie totale en MJ / C) × 100
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <hr class="border-slate-200">
+
+        <!-- ================= SECTION 2 : CALCULATRICE DE VERIFICATION ================= -->
+        <section id="section-calculatrice" class="space-y-6 scroll-mt-24">
+            <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200">
+                <h2 class="text-xl font-bold text-slate-900 mb-4 flex items-center">
+                    <i class="fa-solid fa-calculator text-blue-600 mr-2"></i> 2. Simulateur & Convertisseur d'Énergie
+                </h2>
+                <p class="text-sm text-slate-600 mb-6">Utilise cet outil pour vérifier tes calculs lors de tes entraînements.</p>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <!-- Formule E = P * t -->
+                    <div class="bg-slate-50 p-5 rounded-xl border border-slate-200 space-y-4">
+                        <h3 class="font-bold text-slate-800 border-b pb-2">1. Calculer E = P × Δt</h3>
+                        <div>
+                            <label class="block text-xs font-medium text-slate-700 mb-1">Puissance P (en Watts) :</label>
+                            <input type="number" id="calc-p" placeholder="ex: 800000000 (pour 800 MW)" class="w-full p-2 border rounded-lg text-sm">
+                        </div>
+                        <div class="grid grid-cols-2 gap-2">
+                            <div>
+                                <label class="block text-xs font-medium text-slate-700 mb-1">Durée (Δt) :</label>
+                                <input type="number" id="calc-t" placeholder="ex: 30" class="w-full p-2 border rounded-lg text-sm">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-medium text-slate-700 mb-1">Unité durée :</label>
+                                <select id="calc-t-unit" class="w-full p-2 border rounded-lg text-sm bg-white">
+                                    <option value="min">Minutes</option>
+                                    <option value="h">Heures</option>
+                                    <option value="s">Secondes</option>
+                                </select>
+                            </div>
+                        </div>
+                        <button onclick="computeEnergy()" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 rounded-lg text-sm transition">
+                            Calculer l'énergie E
+                        </button>
+                        <div id="calc-energy-res" class="p-3 bg-white rounded-lg border text-xs text-slate-700 hidden"></div>
+                    </div>
+
+                    <!-- Règle de 3 autonomie -->
+                    <div class="bg-slate-50 p-5 rounded-xl border border-slate-200 space-y-4">
+                        <h3 class="font-bold text-slate-800 border-b pb-2">2. Calcul d'autonomie (Voiture électrique)</h3>
+                        <div>
+                            <label class="block text-xs font-medium text-slate-700 mb-1">Énergie disponible E (en Joules) :</label>
+                            <input type="number" id="calc-auto-e" placeholder="ex: 1.44e12" class="w-full p-2 border rounded-lg text-sm">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-medium text-slate-700 mb-1">Consommation du véhicule (MJ pour 100 km) :</label>
+                            <input type="number" id="calc-auto-c" value="36" placeholder="ex: 36" class="w-full p-2 border rounded-lg text-sm">
+                        </div>
+                        <button onclick="computeAutonomy()" class="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-2 rounded-lg text-sm transition">
+                            Calculer la distance (km)
+                        </button>
+                        <div id="calc-auto-res" class="p-3 bg-white rounded-lg border text-xs text-slate-700 hidden"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <hr class="border-slate-200">
+
+        <!-- ================= SECTION 3 : QCM 15 QUESTIONS ================= -->
+        <section id="section-qcm" class="space-y-6 scroll-mt-24">
+            <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200">
+                <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 border-b pb-4 mb-6">
+                    <div>
+                        <h2 class="text-xl font-bold text-slate-900">3. QCM de Révision Instantané (15 questions)</h2>
+                        <p class="text-sm text-slate-600">Sélectionne tes réponses puis valide pour obtenir ton score et des explications.</p>
+                    </div>
+                    <div id="qcm-score-badge" class="hidden px-4 py-2 bg-blue-100 text-blue-900 font-bold rounded-xl text-lg">
+                        Score : <span id="qcm-score">0</span> / 15
+                    </div>
+                </div>
+
+                <div id="qcm-container" class="space-y-6"></div>
+
+                <div class="mt-8 flex gap-4">
+                    <button onclick="validateQCM()" class="px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-bold rounded-xl transition shadow">
+                        Valider mes réponses
+                    </button>
+                    <button onclick="resetQCM()" class="px-6 py-3 bg-slate-200 hover:bg-slate-300 text-slate-700 font-bold rounded-xl transition">
+                        Réinitialiser
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <hr class="border-slate-200">
+
+        <!-- ================= SECTION 4 : ÉTUDES DE DOCS (10 Q) ================= -->
+        <section id="section-docs" class="space-y-8 scroll-mt-24">
+            <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200">
+                <h2 class="text-xl font-bold text-slate-900 mb-2">4. 10 Questions de Type Évaluation / Étude de Documents</h2>
+                <p class="text-sm text-slate-600 mb-6">Rédige tes réponses sur une feuille puis clique sur <strong>"Voir la correction détaillée"</strong> pour chaque question.</p>
+                <div id="docs-container" class="space-y-6"></div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-slate-400 py-6 border-t border-slate-800 text-center text-xs">
+        <p>Terminale Enseignement Scientifique - Fiche interactive de révision conçue pour l'évaluation de Physique-Chimie / SVT.</p>
+    </footer>
+
+    <!-- JavaScript Application Logic -->
+    <script>
+        const qcmData = [
+            {
+                q: "1. Quelle est l'unité internationale (SI) officielle de mesure de l'énergie ?",
+                options: ["Le Kilowattheure (kWh)", "Le Watt (W)", "Le Joule (J)", "La Tonne Équivalent Pétrole (tep)"],
+                correct: 2,
+                explain: "Le Joule (J) est l'unité internationale. Le Watt est une unité de puissance."
+            },
+            {
+                q: "2. Quelle relation correcte lie l'énergie E, la puissance P et la durée Δt ?",
+                options: ["E = P / Δt", "E = P × Δt", "P = E × Δt", "Δt = P × E"],
+                correct: 1,
+                explain: "L'énergie est le produit de la puissance par la durée : E = P × Δt."
+            },
+            {
+                q: "3. Quelle est la conversion exacte de 1 kWh en Joules ?",
+                options: ["1 000 J", "360 000 J", "3,6 × 10⁶ J (3 600 000 J)", "4,18 × 10¹⁰ J"],
+                correct: 2,
+                explain: "1 kWh = 1 000 W × 3 600 s = 3 600 000 Joules (soit 3,6 × 10⁶ J ou 3,6 MJ)."
+            },
+            {
+                q: "4. Parmi les ressources suivantes, laquelle est une énergie de FLUX (renouvelable) ?",
+                options: ["Le gaz naturel", "L'uranium", "Le rayonnement solaire", "Le charbon"],
+                correct: 2,
+                explain: "Le soleil est inépuisable à l'échelle humaine (flux), contrairement au gaz, au charbon et à l'uranium qui sont en stock fini."
+            },
+            {
+                q: "5. Qu'est-ce que l'énergie finale ?",
+                options: [
+                    "L'énergie disponible directement dans la nature sans transformation",
+                    "L'énergie délivrée et prête à l'emploi pour l'utilisateur final",
+                    "L'énergie uniquement perdue sous forme de chaleur",
+                    "L'énergie issue de la combustion du pétrole uniquement"
+                ],
+                correct: 1,
+                explain: "L'énergie finale est l'énergie au compteur/au réservoir prête à consommer."
+            },
+            {
+                q: "6. Lors de la production d'électricité dans une centrale thermique ou nucléaire, quelle part d'énergie primaire est généralement perdue ?",
+                options: ["Environ 10 %", "Environ 33 % (1/3)", "Environ 67 % (2/3)", "0 % (rendement parfait)"],
+                correct: 2,
+                explain: "Près de 2/3 de l'énergie primaire sont perdus sous forme de chaleur lors des étapes de conversion/transport."
+            },
+            {
+                q: "7. Une ampoule de 20 W fonctionne pendant 5 heures. Quelle énergie consomme-t-elle en kWh ?",
+                options: ["0,1 kWh", "100 kWh", "1 kWh", "0,05 kWh"],
+                correct: 0,
+                explain: "E = P × Δt = 0,02 kW × 5 h = 0,1 kWh."
+            },
+            {
+                q: "8. Pour faire tourner un calcul avec E = P × Δt afin d'obtenir des Joules, la durée Δt doit impérativement être en :",
+                options: ["Heures", "Minutes", "Secondes", "Jours"],
+                correct: 2,
+                explain: "Dans le système international, 1 Joule = 1 Watt × 1 seconde."
+            },
+            {
+                q: "9. L'uranium utilisé dans les centrales nucléaires est classé comme :",
+                options: [
+                    "Une source d'énergie renouvelable de flux",
+                    "Une source d'énergie non renouvelable de stock",
+                    "Une énergie primaire propre et inépuisable",
+                    "Une énergie finale"
+                ],
+                correct: 1,
+                explain: "L'uranium est un minerai présent dans des gisements limités (stock non renouvelable)."
+            },
+            {
+                q: "10. Si un pays consomme 50 Mtep de pétrole sur un total de 200 Mtep, quel est son pourcentage de consommation pétrolière ?",
+                options: ["10 %", "25 %", "50 %", "40 %"],
+                correct: 1,
+                explain: "(50 / 200) × 100 = 25 %."
+            },
+            {
+                q: "11. Quel angle faut-il tracer sur un camembert pour représenter une part de 30 % ?",
+                options: ["30°", "108°", "90°", "120°"],
+                correct: 1,
+                explain: "Angle = 30 × 3,6° = 108°."
+            },
+            {
+                q: "12. Pourquoi l'électricité n'est-elle pas une énergie primaire ?",
+                options: [
+                    "Parce qu'elle ne brûle pas",
+                    "Parce qu'elle n'existe pas à l'état naturel exploitable et doit être produite",
+                    "Parce qu'elle ne produit pas d'effet de serre",
+                    "Parce qu'elle est gratuite"
+                ],
+                correct: 1,
+                explain: "L'électricité résulte de la transformation d'autres sources (eau, vent, uranium, gaz)."
+            },
+            {
+                q: "13. Une voiture consomme 36 MJ pour 100 km. Combien consomme-t-elle pour 1 km ?",
+                options: ["3,6 MJ", "0,36 MJ", "360 MJ", "0,036 MJ"],
+                correct: 1,
+                explain: "36 / 100 = 0,36 MJ pour 1 km."
+            },
+            {
+                q: "14. Quelle quantité d'énergie correspond à 1 Mtep (Tonne Équivalent Pétrole) environ ?",
+                options: ["3,6 × 10⁶ J", "4,18 × 10¹⁰ J", "1 kWh", "10¹² J"],
+                correct: 1,
+                explain: "1 tep = 4,18 × 10¹⁰ J (donnée fournie dans les tableaux de conversion)."
+            },
+            {
+                q: "15. Quel est le principal gaz à effet de serre d'origine humaine émis par la combustion des énergies fossiles ?",
+                options: ["L'oxygène (O₂)", "Le dioxyde de carbone (CO₂)", "L'azote (N₂)", "L'hélium (He)"],
+                correct: 1,
+                explain: "La combustion du pétrole, du charbon et du gaz produit massivement du CO₂."
+            }
+        ];
+
+        const docsData = [
+            {
+                num: 1,
+                title: "1-a) Autonomie d'une voiture alimentée pendant 30 min par une centrale de 800 MW",
+                context: "Une voiture électrique consomme 36 MJ pour 100 km. Elle est alimentée pendant 30 min par une centrale de puissance P = 800 MW.",
+                question: "Déterminer le nombre de kilomètres que pourrait parcourir cette voiture.",
+                solution: `
+                    <ol class="list-decimal list-inside space-y-1 text-slate-700">
+                        <li><strong>Énergie fournie par la centrale :</strong> E = P × Δt</li>
+                        <li>P = 800 MW = 800 000 000 W (soit 800 × 10⁶ W)</li>
+                        <li>Δt = 30 min = 30 × 60 = 1 800 secondes</li>
+                        <li>E = 800 000 000 × 1 800 = 1 440 000 000 000 Joules = 1,44 × 10¹² J (soit 1,44 million de MJ).</li>
+                        <li><strong>Calcul de la distance :</strong></li>
+                        <li>Consommation = 36 MJ pour 100 km, soit 0,36 MJ par km.</li>
+                        <li>Distance = 1 440 000 / 0,36 = <strong>4 000 000 km</strong>.</li>
+                    </ol>
+                `
+            },
+            {
+                num: 2,
+                title: "1-b) Démonstration de l'équivalence 1 kWh = 3,6 x 10⁶ J",
+                context: "L'unité internationale est le Joule, mais les factures d'électricité utilisent le kWh.",
+                question: "Montrer formellement que 1 kWh = 3,6 × 10⁶ J.",
+                solution: `
+                    <p class="text-slate-700 font-mono text-sm">
+                        1 kWh = 1 kW × 1 h<br>
+                        Or 1 kW = 1 000 W et 1 h = 3 600 s.<br>
+                        Donc E = 1 000 W × 3 600 s = 3 600 000 Joules = 3,6 × 10⁶ J.
+                    </p>
+                `
+            },
+            {
+                num: 3,
+                title: "2) Évolution de la consommation d'énergie (1973 - 2012)",
+                context: "Observation des tendances mondiales.",
+                question: "Décrire l'évolution de la consommation d'énergie primaire dans le monde entre 1973 et 2012.",
+                solution: `
+                    <p class="text-slate-700">
+                        La consommation mondiale d'énergie primaire a <strong>plus que doublé</strong> entre 1973 et 2012, passing de 6 106 Mtep à 13 371 Mtep.
+                    </p>
+                `
+            },
+            {
+                num: 4,
+                title: "3) Part d'énergie issue de sources fossiles en 2012",
+                context: "Données : Pétrole (31.4%), Charbon (29%), Gaz naturel (21.3%).",
+                question: "Estimer la part d'énergie primaire consommée en 2012 issue des sources fossiles.",
+                solution: `
+                    <p class="text-slate-700">
+                        Part fossile = 31,4 % + 29,0 % + 21,3 % = <strong>81,7 %</strong>.
+                    </p>
+                `
+            },
+            {
+                num: 5,
+                title: "4) Facteurs influençant la consommation par personne",
+                context: "Facteurs socio-économiques.",
+                question: "Quels sont les paramètres qui peuvent influencer la consommation d'énergie par personne ?",
+                solution: `
+                    <ul class="list-disc list-inside text-slate-700 space-y-1">
+                        <li><strong>Niveau de richesse (PIB par habitant).</strong></li>
+                        <li><strong>Développement technologique et industrialisation.</strong></li>
+                        <li><strong>Mode de vie et climat local.</strong></li>
+                    </ul>
+                `
+            },
+            {
+                num: 6,
+                title: "5) Traçage d'un camembert de consommation finale",
+                context: "Consommation France = 148 Mtep au total. Transports = 49,4 Mtep.",
+                question: "Comment calculer l'angle du secteur 'Transports' pour construire un graphique en camembert ?",
+                solution: `
+                    <p class="text-slate-700">
+                        1. Pourcentage : (49,4 / 148) × 100 ≈ 33,38 %.<br>
+                        2. Angle : 33,38 × 3,6° ≈ <strong>120,2°</strong>.
+                    </p>
+                `
+            },
+            {
+                num: 7,
+                title: "6) Classification des sources d'énergie (Stock vs Flux)",
+                context: "Classer les sources principales.",
+                question: "Présenter le classement sous forme de liste claire.",
+                solution: `
+                    <div class="grid grid-cols-2 gap-4 text-xs">
+                        <div class="bg-amber-50 p-3 rounded-lg border border-amber-200">
+                            <strong class="text-amber-900 block mb-1">Stock (Épuisables) :</strong>
+                            <p class="text-amber-800">• Pétrole, Charbon, Gaz, Uranium</p>
+                        </div>
+                        <div class="bg-emerald-50 p-3 rounded-lg border border-emerald-200">
+                            <strong class="text-emerald-900 block mb-1">Flux (Renouvelables) :</strong>
+                            <p class="text-emerald-800">• Hydraulique, Biomasse, Éolien, Solaire</p>
+                        </div>
+                    </div>
+                `
+            },
+            {
+                num: 8,
+                title: "7) Production nucléaire française",
+                context: "Production : 136 Mtep d'énergie primaire dont 111 Mtep dues au nucléaire.",
+                question: "Calculer la proportion du nucléaire dans la production française.",
+                solution: `
+                    <p class="text-slate-700">
+                        Pourcentage : (111 / 136) × 100 ≈ <strong>81,6 %</strong>.
+                    </p>
+                `
+            },
+            {
+                num: 9,
+                title: "8) Calcul de perte d'énergie dans la chaîne électrique",
+                context: "2/3 de l'énergie primaire sont perdus lors de la conversion.",
+                question: "Combien d'énergie primaire faut-il prélever pour consommer 10 kWh d'électricité ?",
+                solution: `
+                    <p class="text-slate-700">
+                        Énergie Primaire = 3 × Énergie Finale = 3 × 10 kWh = <strong>30 kWh</strong>.
+                    </p>
+                `
+            },
+            {
+                num: 10,
+                title: "9) Temps de fonctionnement d'un radiateur",
+                context: "Radiateur de puissance P = 2 000 W consommant E = 18 MJ.",
+                question: "Pendant combien de temps (en minutes) a-t-il fonctionné ?",
+                solution: `
+                    <p class="text-slate-700 font-mono text-sm">
+                        Δt = E / P = 18 000 000 J / 2 000 W = 9 000 s = <strong>150 minutes</strong> (2h30).
+                    </p>
+                `
+            }
+        ];
+
+        function computeEnergy() {
+            const p = parseFloat(document.getElementById('calc-p').value);
+            const t = parseFloat(document.getElementById('calc-t').value);
+            const unit = document.getElementById('calc-t-unit').value;
+            const resDiv = document.getElementById('calc-energy-res');
+
+            if (isNaN(p) || isNaN(t)) {
+                resDiv.classList.remove('hidden');
+                resDiv.innerHTML = '<span class="text-red-600 font-bold">Veuillez remplir les deux champs.</span>';
+                return;
+            }
+
+            let tSec = t;
+            if (unit === 'min') tSec = t * 60;
+            if (unit === 'h') tSec = t * 3600;
+
+            const joules = p * tSec;
+            const kwh = joules / 3600000;
+            const mj = joules / 1000000;
+
+            resDiv.classList.remove('hidden');
+            resDiv.innerHTML = `
+                <strong>Résultat :</strong><br>
+                • Énergie = <strong>${joules.toExponential(3)} Joules</strong> (${mj.toFixed(2)} MJ)<br>
+                • Énergie = <strong>${kwh.toFixed(2)} kWh</strong>
+            `;
+        }
+
+        function computeAutonomy() {
+            const e = parseFloat(document.getElementById('calc-auto-e').value);
+            const c = parseFloat(document.getElementById('calc-auto-c').value);
+            const resDiv = document.getElementById('calc-auto-res');
+
+            if (isNaN(e) || isNaN(c) || c === 0) {
+                resDiv.classList.remove('hidden');
+                resDiv.innerHTML = '<span class="text-red-600 font-bold">Veuillez entrer des valeurs valides.</span>';
+                return;
+            }
+
+            const eMegajoules = e / 1000000;
+            const km = (eMegajoules / c) * 100;
+
+            resDiv.classList.remove('hidden');
+            resDiv.innerHTML = `
+                <strong>Autonomie calculée :</strong><br>
+                • Distance = <strong>${Math.round(km).toLocaleString()} km</strong>
+            `;
+        }
+
+        function renderQCM() {
+            const container = document.getElementById('qcm-container');
+            container.innerHTML = qcmData.map((q, idx) => `
+                <div class="p-4 bg-slate-50 border border-slate-200 rounded-xl" id="q-box-${idx}">
+                    <p class="font-bold text-slate-800 mb-3">${q.q}</p>
+                    <div class="space-y-2">
+                        ${q.options.map((opt, oIdx) => `
+                            <label class="flex items-center space-x-2 text-sm text-slate-700 cursor-pointer p-2 hover:bg-white rounded transition">
+                                <input type="radio" name="q-${idx}" value="${oIdx}" class="text-blue-600">
+                                <span>${opt}</span>
+                            </label>
+                        `).join('')}
+                    </div>
+                    <div id="q-explain-${idx}" class="mt-3 p-3 text-xs rounded-lg hidden"></div>
+                </div>
+            `).join('');
+        }
+
+        function validateQCM() {
+            let score = 0;
+            qcmData.forEach((q, idx) => {
+                const selected = document.querySelector(`input[name="q-${idx}"]:checked`);
+                const explainDiv = document.getElementById(`q-explain-${idx}`);
+                explainDiv.classList.remove('hidden');
+
+                if (selected && parseInt(selected.value) === q.correct) {
+                    score++;
+                    explainDiv.className = "mt-3 p-3 text-xs rounded-lg bg-emerald-100 text-emerald-800 border border-emerald-200";
+                    explainDiv.innerHTML = `<strong>Correct !</strong> ${q.explain}`;
+                } else {
+                    explainDiv.className = "mt-3 p-3 text-xs rounded-lg bg-rose-100 text-rose-800 border border-rose-200";
+                    explainDiv.innerHTML = `<strong>Incorrect.</strong> La bonne réponse était : <em>${q.options[q.correct]}</em>.<br>${q.explain}`;
+                }
+            });
+
+            document.getElementById('qcm-score').innerText = score;
+            document.getElementById('qcm-score-badge').classList.remove('hidden');
+        }
+
+        function resetQCM() {
+            renderQCM();
+            document.getElementById('qcm-score-badge').classList.add('hidden');
+        }
+
+        function renderDocs() {
+            const container = document.getElementById('docs-container');
+            container.innerHTML = docsData.map((d, idx) => `
+                <div class="p-5 bg-slate-50 border border-slate-200 rounded-xl space-y-3">
+                    <h3 class="font-bold text-slate-900 border-b pb-1">${d.title}</h3>
+                    <p class="text-xs text-slate-500 italic">${d.context}</p>
+                    <p class="text-sm font-semibold text-slate-800">${d.question}</p>
+                    <button onclick="document.getElementById('doc-sol-${idx}').classList.toggle('hidden')" class="px-3 py-1.5 bg-indigo-50 text-indigo-600 border border-indigo-200 rounded-lg text-xs font-bold hover:bg-indigo-100 transition">
+                        Voir la correction détaillée
+                    </button>
+                    <div id="doc-sol-${idx}" class="hidden p-4 bg-white border border-indigo-100 rounded-lg text-xs space-y-2 mt-2 shadow-inner">
+                        ${d.solution}
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        // Initialize UI
+        renderQCM();
+        renderDocs();
+    </script>
+</body>
+
+</html>
